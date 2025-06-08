@@ -1,0 +1,10 @@
+<view class="container_top">
+    <text class="text_green">输入ESPwifi明细</text>
+</view>
+<view class="container_center">
+    <view>SSID:<input type="text" placeholder="输入wifi名" bindinput="SSIDInput" /></view>
+    <view>PWD:<input type="text" placeholder="输入密码" bindinput="PWDInput" /></view>
+</view>
+<view>
+    <button class="text_green" bindtap="connect_wifi">连接</button>
+</view>

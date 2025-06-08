@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/esp_wifi_con/esp_wifi_con",
+    "pages/esp_conf/esp_conf",
+    "pages/index/index",
+    "pages/simpleDemo/simple",
+    "pages/aliyunDemo/aliyunIot"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "微信小程序Mqtt",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

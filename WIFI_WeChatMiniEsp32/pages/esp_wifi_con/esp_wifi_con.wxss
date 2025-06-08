@@ -1,0 +1,33 @@
+.container_top {
+    display: flex;/*弹性布局*/
+    justify-content: center;/*水平居中*/
+    align-items: flex-start;
+    padding-top: 60rpx;
+  }
+  
+  .text_green {
+    background-color: #00cc66;
+    color: white;
+    padding: 20rpx 40rpx;
+    font-size: 30rpx;
+    border-radius: 10rpx;
+  }
+  
+  .container_center {
+    display: flex;
+    flex-direction: column; /* 让子元素纵向排列 */
+    padding: 40rpx;
+    gap: 20rpx; /* 增加行间距 */
+  }
+
+  .container_buttom {
+    display: flex; /* 让 text 占整行 */
+    text-align: center; /* 水平居中 */
+    background-color: #00cc66;
+    color: white;
+    padding: 20rpx 0;
+    font-size: 30rpx;
+    border-radius: 10rpx;
+    margin: 20rpx;
+  }
+  
