@@ -1,0 +1,22 @@
+<view class="container">
+  <button bindtap="initBluetooth">初始化蓝牙</button>
+
+  <picker mode="selector" range="{{deviceList}}" range-key="name" bindchange="onDeviceSelect">
+    <view class="picker">
+      选择设备：{{selectedDevice.name || '未选择'}}
+    </view>
+  </picker>
+
+  <button bindtap="startBluetooth" wx:if="{{selectedDevice.deviceId}}">连接蓝牙</button>
+
+  <view>连接状态：{{connected ? '已连接' : '未连接'}}</view>
+  <view>设备ID{{deviceId}}</view>
+  <view>服务ID{{serviceId}}</view>
+  <view>特征ID{{characteristicId}}</view>
+  <view></view>
+  <view></view>
+  <input wx:if="{{connected}}" placeholder="输入字符串" bindinput="onInput" />
+  <button bindtap="sendData" wx:if="{{connected}}">发送</button>
+  <button bindtap="led_on" wx:if="{{connected}}">LED开</button>
+  <button bindtap="led_off" wx:if="{{connected}}">LED关</button>
+</view>
